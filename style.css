@@ -1,0 +1,439 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    width: 100%;
+}
+
+.body
+{
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+
+/* ---------------------------------------nav start---------------------------- */
+nav
+{
+    /* border: 2px solid red; */
+    display: flex;
+    height: 69px;
+    width: 100%;
+    padding-top: 21px;
+    background: #fff;
+    box-shadow: 2px 0px 15px 10px rgba(211, 211, 211, 0.43) ;
+    color: #24325d;
+    position: fixed;
+    z-index: 10000;
+}
+
+nav .logo
+{
+    font-size: 28px;
+    text-decoration: none;
+    margin-left: 100px;
+    color: #24325d;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-family: "Raleway", sans-serif;
+}
+
+nav ul
+{
+    /* border: 5px solid red; */
+    display: flex;
+    margin-left: 620px;
+}
+
+nav ul li
+{
+    /* border: 2px solid red; */
+    list-style-type: none;
+    font-size: 17px;
+    margin: 0px 18px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2b3c6f;
+    transition: .3s;
+}
+
+nav ul li a:hover
+{
+    color: #006fbe;
+}
+
+/* .active, nav ul li:hover
+{
+    background-color: #006fbe;
+} */
+
+/* --------------------------------nav end------------------------------- */
+
+
+/* ---------------------------slider start---------------------- */
+
+.slider
+{
+    background-image: url(https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid green;
+    height: 650px;
+    width: 100%;
+    animation-name: sliderimg;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes sliderimg 
+{
+    0%{background-image: url(https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-1.jpg);}
+    50%{background-image: url(https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-2.jpg);}
+    100%{background-image: url(https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-3.jpg);}
+}
+
+/* ---------------------------slider end------------------------ */
+
+/* ---------------------------family info card start--------------------------------- */
+
+.family-main
+{
+    /* border: 2px solid black; */
+    margin: 40px auto;
+    height: 540px;
+    width: 85%;
+    position: relative;
+}
+
+.family-main h2
+{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    font-family: "Raleway", sans-serif;
+    color: #444444;
+}
+
+.family-main h2::before
+{
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 2px;
+    top: 54px;
+    left: 579px;
+    background: #ddd;
+}
+
+.family-main h2::after
+{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    top: 54px;
+    left: 618px;
+    background: #006fbe;
+}
+
+
+.family-main .para1
+{
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    font-size: 16px;
+    text-align: center;
+}
+
+.family-info
+{
+    /* border: 2px solid red; */
+    height: 393px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.family-info .family-img
+{
+    height: 100%;
+    width: 49%;
+    /* border: 2px solid yellow; */
+}
+
+.family-info .family-img img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.family-info .family-text
+{
+    height: 100%;
+    width: 49%;
+    /* border: 2px solid green; */
+}
+
+.family-info .family-text p,li
+{
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+.family-info .family-text ul
+{
+    margin: 20px 0px;
+}
+
+.family-info .family-text ul li
+{
+    list-style-type: none;
+    margin: 10px 0px;
+}
+
+.family-info .family-text .para2
+{
+    margin-bottom: 30px;
+}
+
+.family-info .family-text a
+{
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 12px 32px;
+    border-radius: 5px;
+    line-height: 1;
+    color: #006fbe;
+    border: 2px solid #006fbe;
+    text-decoration: none;
+    transition: 0.3s;
+    animation-delay: 0.8s;
+}
+
+.family-info .family-text a:hover
+{
+    background: #006fbe;
+    color: #fff;
+}
+
+/* <!--------------------------------------icon box start ------------------------------------------------> */
+
+.icon-container
+{
+    /* border: 2px solid red; */
+    height: 502px;
+    width: 85%;
+    margin: 100px auto;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.icon-content
+{
+    /* border: 2px solid red;    */
+    width: 33.33%;
+    height: 250px;
+    text-align: center;
+    padding: 20px
+}
+
+.icon-container .icon-content .icon
+{
+    /* border: 2px solid red; */
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 32px;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 3px 3px 35px 8px rgba(211, 211, 211, 0.677);
+    margin-bottom: 15px;
+}
+
+.icon-container .icon-content .description
+{
+    margin-top: 28px;
+}
+
+/* <!---------------------------------------icon box end-------------------------------------------------->*/
+
+/* -----------------------------------------Recent photos start------------------------------------------- */
+
+.photos
+{
+    /* border: 2px solid red; */
+    height: 400px;
+    width: 85%;
+    margin: 70px auto;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    position: relative;
+}
+
+.photos h2
+{
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.photos h2::before
+{
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 2px;
+    top: 64px;
+    left: 579px;
+    background: #ddd;
+}
+
+.photos h2::after
+{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    top: 64px;
+    left: 618px;
+    background: #006fbe;
+}
+
+.photos p
+{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.photos .photos-lib
+{
+    /* border: 2px solid red; */
+    height: 67%;
+    width: 100%;
+    padding: 11px;
+}
+
+.photos .photos-lib a
+{
+    margin: 7px;
+}
+
+.photos .photos-lib img
+{
+    /* border: 2px solid red; */
+    height: 220px;
+    width: 235px;    
+}
+
+/* -----------------------------------------Recent photos end--------------------------------------------- */
+
+/* ----------------------------------------Footer start--------------------------------------------------- */
+
+.footer
+{
+    height: 310px;
+    background: #1d284b;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+    /* border: 2px solid red; */
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer h2
+{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin: 0 0 15px 0;
+}
+
+.footer .footer-para
+{
+    font-size: 15;
+    font-style: italic;
+    margin: 0 0 40px 0;
+}
+
+.footer-icon
+{
+    /* border: 2px solid red; */
+    margin: 30px;
+}
+
+.footer-icon .footer-icon-i
+{
+    font-size: 18px;
+    display: inline-block;
+    background: #006fbe;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+.footer .copyright
+{
+    margin-bottom: 5px;
+}
+/* ----------------------------------------Footer end----------------------------------------------------- */
+
+.icon-arrow
+{
+    z-index: 10;
+    background-color: #006fbe;
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: -425px;
+}
+
+.icon-arrow a i
+{
+    padding: 13px;
+    font-size: 20px;
+}
+
+.icon-arrow:hover
+{
+    background-color: #008df1;
+}

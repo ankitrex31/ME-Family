@@ -1,0 +1,329 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    width: 100%;
+}
+
+.body
+{
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+
+/* ---------------------------------------nav start---------------------------- */
+nav
+{
+    /* border: 2px solid red; */
+    display: flex;
+    height: 69px;
+    width: 100%;
+    padding-top: 21px;
+    background: #fff;
+    box-shadow: 2px 0px 50px 20px rgba(211, 211, 211, 0.43) ;
+    color: #24325d;
+    position: fixed;
+    z-index: 10000;
+}
+
+nav .logo
+{
+    font-size: 28px;
+    text-decoration: none;
+    margin-left: 100px;
+    color: #24325d;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-family: "Raleway", sans-serif;
+}
+
+nav ul
+{
+    /* border: 5px solid red; */
+    display: flex;
+    margin-left: 620px;
+}
+
+nav ul li
+{
+    /* border: 2px solid red; */
+    list-style-type: none;
+    font-size: 17px;
+    margin: 0px 18px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2b3c6f;
+    transition: .3s;
+}
+
+nav ul li a:hover
+{
+    color: #006fbe;
+}
+
+/* --------------------------------nav end------------------------------- */
+
+/* --------------------------------page details start----------------------------- */
+
+.page-details-main
+{
+    padding-top: 82px;
+    background: #f5f7fb;
+    height: 130px;
+    /* border: 2px solid red; */
+}
+
+.page-details-main div
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-details-main div h2
+{
+    margin-left: 100px;
+    font-size: 28px;
+    font-weight: 300;
+    font-family: "Raleway", sans-serif;
+}
+
+.page-details-main div ul
+{
+    display: flex;
+    margin-right: 104px;
+}
+
+.page-details-main div ul li
+{
+    list-style-type: none;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+
+
+.page-details-main div ul li a
+{
+    color: #006fbe;
+    text-decoration: none;
+    margin-right: 7px;
+}
+
+/* --------------------------------page details end------------------------------- */
+
+
+
+.img-links
+{
+    /* border: 2px solid red; */
+    height: 30px;
+    margin-top: 70px;
+}
+
+.img-links ul
+{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.img-links ul li a
+{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #444444;
+    margin-bottom: 5px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.img-links ul li a:hover
+{
+    color: #006fbe;
+}
+
+
+/* <!------------------------------------- Gallery start ------------------------------------> */
+.gallery-parent
+{
+    /* border: 2px solid rebeccapurple; */
+    margin: 30px auto;
+    height: 620px;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.gallery-card
+{
+    height: 260px;
+    width: 400px;
+    /* border: 2px solid red; */
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-card .content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    background-color: rgba(2, 2, 62, 0.496);
+    color: white;
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    width: 90%;
+    height: 90%;
+    transition-delay: .2s;
+    visibility: hidden;
+    transition: ease-in .5s;
+
+}
+
+.content h4
+{
+    margin: 10px 0px;
+}
+
+img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.content::before
+{
+    content: "";
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    /* border: 3px solid white; */
+    width: 35px;
+    height: 45px;
+    position: relative;
+    top: -6px;
+    right: 127px;
+}
+
+.content::after
+{
+    content: "";
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    /* border: 3px solid white; */
+    width: 35px;
+    height: 45px;
+    position: relative;
+    bottom: -6px;
+    left: 137px;
+}
+
+.gallery-card:hover .content
+{
+    transform: scale(1.2);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* <!------------------------------------- Gallery end ------------------------------------> */
+
+
+/* ----------------------------------------Footer start--------------------------------------------------- */
+
+.footer
+{
+    height: 310px;
+    background: #1d284b;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+    /* border: 2px solid red; */
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer h2
+{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin: 0 0 15px 0;
+}
+
+.footer .footer-para
+{
+    font-size: 15;
+    font-style: italic;
+    margin: 0 0 40px 0;
+}
+
+.footer-icon
+{
+    /* border: 2px solid red; */
+    margin: 30px;
+}
+
+.footer-icon .footer-icon-i
+{
+    font-size: 18px;
+    display: inline-block;
+    background: #006fbe;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+.footer .copyright
+{
+    margin-bottom: 5px;
+}
+/* ----------------------------------------Footer end----------------------------------------------------- */
+
+.icon-arrow
+{
+    z-index: 10;
+    background-color: #006fbe;
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    right: 10px;
+    bottom: -425px;
+}
+
+.icon-arrow a i
+{
+    padding: 13px;
+    font-size: 20px;
+}
+
+.icon-arrow:hover
+{
+    background-color: #008df1;
+}

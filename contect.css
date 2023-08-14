@@ -1,0 +1,350 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    width: 100%;
+}
+
+.body
+{
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+
+/* ---------------------------------------nav start---------------------------- */
+nav
+{
+    /* border: 2px solid red; */
+    display: flex;
+    height: 69px;
+    width: 100%;
+    padding-top: 21px;
+    background: #fff;
+    box-shadow: 2px 0px 50px 20px rgba(211, 211, 211, 0.43) ;
+    color: #24325d;
+    position: fixed;
+    z-index: 10000;
+}
+
+nav .logo
+{
+    font-size: 28px;
+    text-decoration: none;
+    margin-left: 100px;
+    color: #24325d;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-family: "Raleway", sans-serif;
+}
+
+nav ul
+{
+    /* border: 5px solid red; */
+    display: flex;
+    margin-left: 620px;
+}
+
+nav ul li
+{
+    /* border: 2px solid red; */
+    list-style-type: none;
+    font-size: 17px;
+    margin: 0px 18px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2b3c6f;
+    transition: .3s;
+}
+
+nav ul li a:hover
+{
+    color: #006fbe;
+}
+
+/* --------------------------------nav end------------------------------- */
+
+/* --------------------------------page details start----------------------------- */
+
+.page-details-main
+{
+    padding-top: 82px;
+    background: #f5f7fb;
+    height: 130px;
+    /* border: 2px solid red; */
+}
+
+.page-details-main div
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-details-main div h2
+{
+    margin-left: 100px;
+    font-size: 28px;
+    font-weight: 300;
+    font-family: "Raleway", sans-serif;
+}
+
+.page-details-main div ul
+{
+    display: flex;
+    margin-right: 104px;
+}
+
+.page-details-main div ul li
+{
+    list-style-type: none;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+
+
+.page-details-main div ul li a
+{
+    color: #006fbe;
+    text-decoration: none;
+    margin-right: 7px;
+}
+
+/* --------------------------------page details end------------------------------- */
+
+
+/* ---------------------------------map start ----------------------------------*/
+
+.card-map
+{
+    /* border: 2px solid rebeccapurple; */
+    margin: 60px auto;
+    height: 380px;
+    width: 85%;
+}
+
+.card-map iframe
+{
+    height: 376px;
+    width: 100%;
+}
+
+
+/* --------------------------------- map end -----------------------------------*/
+
+/* -------------------------------- contect form start ------------------------- */
+
+.main
+{
+    /* border: 2px solid rebeccapurple; */
+    margin: 60px auto;
+    height: 370px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.loc-parent
+{
+    /* border: 3px solid red; */
+    width: 30%;
+}
+
+.loc
+{
+    /* border: 3px solid green; */
+    margin-bottom: 40px;
+    margin-top: 14px;
+}
+
+.loc-parent .loc i
+{
+    font-size: 20px;
+    color: #006fbe;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #e7f5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.loc-parent .loc i:hover
+{
+    background-color: #006fbe;
+    color: #e7f5ff;
+}
+
+.loc-parent .loc h4
+{
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #24325d;
+}
+
+.loc-parent .loc p
+{
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #405aa7;
+}
+
+.userinput
+{
+    /* border: 3px solid red; */
+    width: 70%;
+    padding: 17px;
+}
+
+
+.userinput .userinput-box
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.userinput .userinput-box input
+{
+    width: 49%;
+    /* border: 4px solid red; */
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 10px 12px;
+}
+
+
+.userinput .sub input
+{
+    width: 100%;
+    /* border: 4px solid red; */
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 4px;
+    padding: 10px 12px;
+}
+
+.text textarea
+{
+    width: 100%;
+    height: 145px;
+    margin-top: 15px;
+    border-radius: 4px;
+    padding: 10px 12px;
+}
+
+.btn button
+{
+    /* border: 2px solid red; */
+    background-color: #006fbe;
+    color: white;
+    padding: 14px 30px;
+    margin-top: 20px;
+    margin-left: 375px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+/* --------------------------- contact form end ----------------------- */
+
+
+/* ----------------------------------------Footer start--------------------------------------------------- */
+
+.footer
+{
+    height: 310px;
+    background: #1d284b;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+    /* border: 2px solid red; */
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer h2
+{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin: 0 0 15px 0;
+}
+
+.footer .footer-para
+{
+    font-size: 15;
+    font-style: italic;
+    margin: 0 0 40px 0;
+}
+
+.footer-icon
+{
+    /* border: 2px solid red; */
+    margin: 30px;
+}
+
+.footer-icon .footer-icon-i
+{
+    font-size: 18px;
+    display: inline-block;
+    background: #006fbe;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+.footer .copyright
+{
+    margin-bottom: 5px;
+}
+/* ----------------------------------------Footer end----------------------------------------------------- */
+
+.icon-arrow
+{
+    z-index: 10;
+    background-color: #006fbe;
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    right: 10px;
+    bottom: -425px;
+}
+
+.icon-arrow a i
+{
+    padding: 13px;
+    font-size: 20px;
+}
+
+.icon-arrow:hover
+{
+    background-color: #008df1;
+}
