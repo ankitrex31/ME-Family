@@ -16,7 +16,7 @@ body {
 
 /* ---------------------------------------nav start---------------------------- */
 nav {
-    /* border: 2px solid red; */
+     border: 2px solid red;
     display: flex;
     height: 69px;
     width: 100%;
