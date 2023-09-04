@@ -1,38 +1,34 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body
-{
+html,
+body {
     width: 100%;
 }
 
-.body
-{
+.body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
 }
 
 /* ---------------------------------------nav start---------------------------- */
-nav
-{
+nav {
     /* border: 2px solid red; */
     display: flex;
     height: 69px;
     width: 100%;
     padding-top: 21px;
     background: #fff;
-    box-shadow: 2px 0px 15px 10px rgba(211, 211, 211, 0.43) ;
+    box-shadow: 2px 0px 15px 10px rgba(211, 211, 211, 0.43);
     color: #24325d;
     position: fixed;
     z-index: 10000;
 }
 
-nav .logo
-{
+nav .logo {
     font-size: 28px;
     text-decoration: none;
     margin-left: 100px;
@@ -43,23 +39,20 @@ nav .logo
     font-family: "Raleway", sans-serif;
 }
 
-nav ul
-{
+nav ul {
     /* border: 5px solid red; */
     display: flex;
     margin-left: 620px;
 }
 
-nav ul li
-{
+nav ul li {
     /* border: 2px solid red; */
     list-style-type: none;
     font-size: 17px;
     margin: 0px 18px;
 }
 
-nav ul li a
-{
+nav ul li a {
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
@@ -68,8 +61,7 @@ nav ul li a
     transition: .3s;
 }
 
-nav ul li a:hover
-{
+nav ul li a:hover {
     color: #006fbe;
 }
 
@@ -78,18 +70,47 @@ nav ul li a:hover
     background-color: #006fbe;
 } */
 
+
+/* @media (max-width:400px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 72px;
+        width: 100%;
+        padding-top: 10px;
+        background: #fff;
+        box-shadow: 2px 0px 15px 10px rgba(211, 211, 211, 0.43);
+        color: #24325d;
+        position: fixed;
+        z-index: 10000;
+    }
+
+    nav .logo {
+        border: 2px solid red;
+        width: 10vw;
+        font-size: 5vw;
+        text-decoration: none;
+        margin-left: 10px;
+        color: #24325d;
+        line-height: 1;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        font-family: "Raleway", sans-serif;
+    }
+} */
+
 /* --------------------------------nav end------------------------------- */
 
 
 /* ---------------------------slider start---------------------- */
 
-.slider
-{
+.slider {
     background-image: url(https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     height: 650px;
     width: 100%;
     animation-name: sliderimg;
@@ -98,19 +119,25 @@ nav ul li a:hover
     animation-delay: 2s;
 }
 
-@keyframes sliderimg 
-{
-    0%{background-image: url(https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-1.jpg);}
-    50%{background-image: url(https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-2.jpg);}
-    100%{background-image: url(https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-3.jpg);}
+@keyframes sliderimg {
+    0% {
+        background-image: url(https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-1.jpg);
+    }
+
+    50% {
+        background-image: url(https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-2.jpg);
+    }
+
+    100% {
+        background-image: url(https://bootstrapmade.com/demo/templates/MeFamily/assets/img/slide/slide-3.jpg);
+    }
 }
 
 /* ---------------------------slider end------------------------ */
 
 /* ---------------------------family info card start--------------------------------- */
 
-.family-main
-{
+.family-main {
     /* border: 2px solid black; */
     margin: 40px auto;
     height: 540px;
@@ -118,8 +145,7 @@ nav ul li a:hover
     position: relative;
 }
 
-.family-main h2
-{
+.family-main h2 {
     text-align: center;
     font-size: 32px;
     font-weight: bold;
@@ -130,8 +156,7 @@ nav ul li a:hover
     color: #444444;
 }
 
-.family-main h2::before
-{
+.family-main h2::before {
     content: "";
     position: absolute;
     width: 125px;
@@ -141,8 +166,7 @@ nav ul li a:hover
     background: #ddd;
 }
 
-.family-main h2::after
-{
+.family-main h2::after {
     content: "";
     position: absolute;
     width: 40px;
@@ -153,16 +177,14 @@ nav ul li a:hover
 }
 
 
-.family-main .para1
-{
+.family-main .para1 {
     font-family: "Open Sans", sans-serif;
     color: #444444;
     font-size: 16px;
     text-align: center;
 }
 
-.family-info
-{
+.family-info {
     /* border: 2px solid red; */
     height: 393px;
     width: 100%;
@@ -171,28 +193,25 @@ nav ul li a:hover
     margin-top: 22px;
 }
 
-.family-info .family-img
-{
+.family-info .family-img {
     height: 100%;
     width: 49%;
     /* border: 2px solid yellow; */
 }
 
-.family-info .family-img img
-{
+.family-info .family-img img {
     height: 100%;
     width: 100%;
 }
 
-.family-info .family-text
-{
+.family-info .family-text {
     height: 100%;
     width: 49%;
     /* border: 2px solid green; */
 }
 
-.family-info .family-text p,li
-{
+.family-info .family-text p,
+li {
     font-family: "Open Sans", sans-serif;
     color: #444444;
     font-size: 16px;
@@ -200,24 +219,20 @@ nav ul li a:hover
 }
 
 
-.family-info .family-text ul
-{
+.family-info .family-text ul {
     margin: 20px 0px;
 }
 
-.family-info .family-text ul li
-{
+.family-info .family-text ul li {
     list-style-type: none;
     margin: 10px 0px;
 }
 
-.family-info .family-text .para2
-{
+.family-info .family-text .para2 {
     margin-bottom: 30px;
 }
 
-.family-info .family-text a
-{
+.family-info .family-text a {
     font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -232,16 +247,14 @@ nav ul li a:hover
     animation-delay: 0.8s;
 }
 
-.family-info .family-text a:hover
-{
+.family-info .family-text a:hover {
     background: #006fbe;
     color: #fff;
 }
 
 /* <!--------------------------------------icon box start ------------------------------------------------> */
 
-.icon-container
-{
+.icon-container {
     /* border: 2px solid red; */
     height: 502px;
     width: 85%;
@@ -253,8 +266,7 @@ nav ul li a:hover
     flex-wrap: wrap;
 }
 
-.icon-content
-{
+.icon-content {
     /* border: 2px solid red;    */
     width: 33.33%;
     height: 250px;
@@ -262,8 +274,7 @@ nav ul li a:hover
     padding: 20px
 }
 
-.icon-container .icon-content .icon
-{
+.icon-container .icon-content .icon {
     /* border: 2px solid red; */
     height: 65px;
     width: 65px;
@@ -276,8 +287,7 @@ nav ul li a:hover
     margin-bottom: 15px;
 }
 
-.icon-container .icon-content .description
-{
+.icon-container .icon-content .description {
     margin-top: 28px;
 }
 
@@ -285,8 +295,7 @@ nav ul li a:hover
 
 /* -----------------------------------------Recent photos start------------------------------------------- */
 
-.photos
-{
+.photos {
     /* border: 2px solid red; */
     height: 400px;
     width: 85%;
@@ -296,8 +305,7 @@ nav ul li a:hover
     position: relative;
 }
 
-.photos h2
-{
+.photos h2 {
     font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
@@ -307,8 +315,7 @@ nav ul li a:hover
     text-align: center;
 }
 
-.photos h2::before
-{
+.photos h2::before {
     content: "";
     position: absolute;
     width: 125px;
@@ -318,8 +325,7 @@ nav ul li a:hover
     background: #ddd;
 }
 
-.photos h2::after
-{
+.photos h2::after {
     content: "";
     position: absolute;
     width: 40px;
@@ -329,38 +335,33 @@ nav ul li a:hover
     background: #006fbe;
 }
 
-.photos p
-{
+.photos p {
     text-align: center;
     padding-bottom: 20px;
 }
 
-.photos .photos-lib
-{
+.photos .photos-lib {
     /* border: 2px solid red; */
     height: 67%;
     width: 100%;
     padding: 11px;
 }
 
-.photos .photos-lib a
-{
+.photos .photos-lib a {
     margin: 7px;
 }
 
-.photos .photos-lib img
-{
+.photos .photos-lib img {
     /* border: 2px solid red; */
     height: 220px;
-    width: 235px;    
+    width: 235px;
 }
 
 /* -----------------------------------------Recent photos end--------------------------------------------- */
 
 /* ----------------------------------------Footer start--------------------------------------------------- */
 
-.footer
-{
+.footer {
     height: 310px;
     background: #1d284b;
     color: #fff;
@@ -371,29 +372,25 @@ nav ul li a:hover
     font-family: "Open Sans", sans-serif;
 }
 
-.footer h2
-{
+.footer h2 {
     font-size: 36px;
     font-weight: 700;
     font-family: "Poppins", sans-serif;
     margin: 0 0 15px 0;
 }
 
-.footer .footer-para
-{
+.footer .footer-para {
     font-size: 15;
     font-style: italic;
     margin: 0 0 40px 0;
 }
 
-.footer-icon
-{
+.footer-icon {
     /* border: 2px solid red; */
     margin: 30px;
 }
 
-.footer-icon .footer-icon-i
-{
+.footer-icon .footer-icon-i {
     font-size: 18px;
     display: inline-block;
     background: #006fbe;
@@ -408,14 +405,13 @@ nav ul li a:hover
     transition: 0.3s;
 }
 
-.footer .copyright
-{
+.footer .copyright {
     margin-bottom: 5px;
 }
+
 /* ----------------------------------------Footer end----------------------------------------------------- */
 
-.icon-arrow
-{
+.icon-arrow {
     z-index: 10;
     background-color: #006fbe;
     width: 40px;
@@ -427,13 +423,11 @@ nav ul li a:hover
     bottom: -425px;
 }
 
-.icon-arrow a i
-{
+.icon-arrow a i {
     padding: 13px;
     font-size: 20px;
 }
 
-.icon-arrow:hover
-{
+.icon-arrow:hover {
     background-color: #008df1;
 }
